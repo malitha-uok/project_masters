@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Set Hall Status</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+	<form class="form-control" method="POST">
+		<h3>Search for a Hall</h3>
+	    <hr>
+		<table>
+			<tr>
+				<td>Select the Hall</td>
+				<td><select>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Status</td>
+				<td><input type="radio" id="status" name="status">Reserved
+					<input type="radio" id="status" name="status">Suspended
+					<input type="radio" id="status" name="status">Free
+				</td>
+			</tr>
+			<tr>
+				<td>Reason</td>
+				<td><textarea name="reason" rows="3" cols="50"></textarea></td>
+			</tr>
+		</table>
+		<input type="submit" name="update" value="Update">
+		<input type="button" name="delete" value="Delete">
+	</form>
+</div>
+</body>
+</html>

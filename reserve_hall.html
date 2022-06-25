@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reserve a Hall</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+	<form class="form-control" method="POST">
+		<h3>Reserve a Hall</h3>
+	    <hr>
+		<table>
+			<tr>
+				<td>Lecture</td>
+				<td><input type="text" name="lec" required></td>
+				<td>Lecture ID</td>
+				<td><input type="text" name="lecid" required></td>
+			</tr>
+			<tr>
+				<td>Lecturer</td>
+				<td><input type="text" name="lecturer" required></td>
+				<td>Students</td>
+				<td><input type="text" name="student" required></td>
+			</tr>
+			<tr>
+				<td>Lecture Date</td>
+				<td><input type="date" name="date"></td>
+				<td>Start Time</td>
+				<td><input type="time" name="s_time"></td>
+			</tr>
+			<tr>
+				<td>For How Long</td>
+				<td>
+					<select class="form-control">
+						<option></option>
+						<option value="1d">1 Day</option>
+						<option value="2d">2 Day</option>
+						<option value="3d">3 Day</option>
+						<option value="4d">4 Day</option>
+						<option value="5d">5 Day</option>
+						<option value="6d">6 Day</option>
+						<option value="1w">1 Week</option>
+						<option value="2w">2 Week</option>
+						<option value="3w">3 Week</option>
+						<option value="1m">1 Month</option>
+						<option value="2m">2 Month</option>
+						<option value="1s">1 Semester</option>
+					</select>
+			    </td>
+				<td>Duration</td>
+				<td><input type="text" name="duration"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>End Time</td>
+				<td><input type="time" name="e_time"></td>
+			</tr>
+			<tr>
+				<td colspan="4"><b>Equipments Need</b></td>
+			</tr>
+			<tr>
+				<td>Projectors</td>
+				<td><input type="checkbox" id="projector" name="projector"></td>
+				<td>Screens</td>
+				<td><input type="checkbox" id="screen" name="screen"></td>
+			</tr>
+			<tr>
+				<td>MICs</td>
+				<td><input type="checkbox" id="mic" name="mic"></td>
+				<td>Amps</td>
+				<td><input type="checkbox" id="amp" name="amp"></td>
+				
+			</tr>
+		</table>
+		<input type="submit" name="reserve" value="Reserve">
+		<input type="button" name="reset" value="Reset">
+	</form>
+    </div>
+
+</body>
+</html>

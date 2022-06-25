@@ -1,0 +1,111 @@
+body {
+  font-family: Arial;
+  color: red;
+  background-color:red;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  /*overflow-x: hidden;*/
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: red;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  padding: 20px 20px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+	margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+input[type=text],[type=email],[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  text-align:center;
+}
+input[type=submit]{
+  background-color: red;
+  border: none;
+  width: 70%;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+input[type=submit]:hover,[type=reset]:hover {
+  background-color: #800000;
+}
+label{
+	color: #4d4d4d;
+	font-size: 15px;}
+h2{
+	color:#4d4d4d;
+	top:10%;
+	}
+
+.login{
+	color: #4d4d4d;
+	font-size: 15px;}
+
+/*.button {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 250px;
+}
+
+.button1 {
+  background-color: #FF0000; 
+  color: white; 
+}
+
+.button1:hover {
+  background-color: #800000;
+  color: white;
+}
+.button2 {
+  background-color: #FF0000; 
+  color: white; 
+}
+
+.button2:hover {
+  background-color: #800000;
+  color: white;
+}*/

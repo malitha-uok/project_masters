@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $('#nicId').change(function(e) {
+     const nic = $(this).val();
+     // should be requred
+     if(nic=='') {
+      console.log('Nic requred');
+     }
+  // if length 10 
+     else if(nic.length==10){
+   // last letter should be X or V
+   const lastLetter = nic[nic.length-1];
+   const numbers = nic.slice(0,nic.length-1);
+   console.log(numbers,!isNaN(numbers))
+   if((lastLetter==='V' || lastLetter==='X') && !isNaN(numbers))
+   {
+    console.log('This is valid old nic');
+   }
+   else
+   {
+    console.log('This is not a valid old nic number', (lastLetter==='V' || lastLetter==='X') , isNaN(numbers));
+   }
+     }
+  // if length 13
+     else if(nic.length==13){
+   // only digits
+   if(!isNaN(nic)){
+    console.log('This is a valid new nic number');
+   }
+   else {
+    console.log('This is not a valid new nic number', nic);
+   }
+     }
+     else {
+      console.log('Please Enter Valid Nic');
+     }
+
+   })
+});
+</script>
+</head>
+
+<body>
+<div class="split left">
+  <div>
+    <img src="image1.jpg" alt="Faculty of Science">
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <form action="register.php" method="POST">
+    	<h2>REGISTRATION</h2>
+    	<input type="text" name="nic" placeholder="NIC" id="nicId">
+    	<input type="text" name="fname" placeholder="First Name" required>
+    	<input type="text" name="lname" placeholder="Last Name" required>
+   	  <p>
+   	      <label>
+   	        <input type="radio" name="RadioGroup1" value="student" id="RadioGroup1_0">
+   	        Student</label>
+   	      <label>
+   	        <input type="radio" name="RadioGroup1" value="lecturer" id="RadioGroup1_1">
+   	        Lecturer</label>
+   	      <label>
+   	        <input type="radio" name="RadioGroup1" value="staff" id="RadioGroup1_2">
+   	        Staff</label>
+      </p>
+    	  <select id="departmet" name="department">
+    <option value="Physics & Electronics">Physics & Electronics</option>
+    <option value="Mathematics">Maths</option>
+    <option value="Bio">Bio</option>
+    <option value="Stat">Stat</option>
+    <option value="IM">IM</option>
+    <option value="encm">encm</option>
+  </select>
+   <input type="text" name="tp" placeholder="Telephone Number" required>
+   <input type="email" name="email" placeholder="Email">
+   <input type="text" name="username" placeholder="User Name" >
+   <input type="password" name="password" placeholder="Password">
+
+	<input type="submit" value="Submit">
+    </form>
+	<p class="login"><i>Already have an account?</i><a href="login2.php"> Login</a></p>
+  </div>
+</div>
+</body>
+</html>

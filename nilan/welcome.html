@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="split left">
+  <div>
+    <img src="" alt="">
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <form action="" method="POST">
+		<input type="text" name="username" placeholder="User Name">
+    	<input type="password" name="password" placeholder="Password">
+		<input type="submit" value="Submit">
+    </form>
+	<div style = "font-size:11px; color:#cc0000; margin-top:10px">
+			   <?php  $error = "Your Username Name or Password is invalid";
+						echo $error; ?></div>
+	<p class="login"><i>Don't you have an account?</i><a href="register.html"> Register Here</a></p>
+  </div>
+</div>
+</body>
+</html>

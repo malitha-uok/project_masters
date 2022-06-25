@@ -95,3 +95,12 @@ div{
   margin: 1px 0;
   display: inline-block;
 }
+
+div.b{
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 0;
+  background-color: #E5E7E9;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suspend a Hall</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+	<form class="form-control" method="POST">
+		<h3>Temp Suspend a Hall</h3>
+	    <hr>
+		<table>
+			<tr>
+				<td>Select the Hall</td>
+				<td><select>
+					<option></option>
+					<option value="h1">B1 212</option>
+					<option value="h2">B1 343</option>
+					<option value="h3">A7 406</option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+                    <option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+				    </select>
+			    </td>
+			</tr>
+			<tr>
+				<td>From</td>
+				<td><input type="text" name="from"></td>
+			</tr>
+			<tr>
+				<td>To</td>
+				<td><input type="text" name="to"></td>
+			</tr>
+			<tr>
+				<td>Reason</td>
+				<td><textarea rows="5" cols="65"></textarea></td>
+			</tr>
+		</table>
+		<input type="submit" name="suspend" value="Suspend">
+	</form>
+    </div>
+
+</body>
+</html>

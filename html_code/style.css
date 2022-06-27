@@ -1,0 +1,132 @@
+td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+th {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+table {
+  border-spacing: 5px;
+}
+
+body {
+  margin: 10px;
+}
+
+hr{
+  height:3px;
+  border-width:1;
+  color:gray;
+  background-color:gray
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 7px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 15%;
+  background-color: #1A9323 ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3DF04A;
+}
+
+input[type=button] {
+  width: 15%;
+  background-color: #F5051B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #F73446;
+}
+
+input[type=checkbox] {
+  width: 25%;
+  padding: 3px 7px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 60%;
+  padding: 8px 14px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  width: 15%;
+  padding: 2px 5px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+div{
+  width: 60%;
+  padding: 3px 7px;
+  margin: 1px 0;
+  display: inline-block;
+}
+
+div.b{
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 0;
+  background-color: #E5E7E9;
+}
+
+.text {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.text:focus {
+  width: 100%;

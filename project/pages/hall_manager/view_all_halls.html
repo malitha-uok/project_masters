@@ -54,19 +54,19 @@
                   <div class="collapse" id="hall_manager">
                     <ul class="nav sub-menu">
                       <li class="nav-item">
-                        <a href="../hall_manager/" class="nav-link">Add New Hall</a>
+                        <a href="add_new_hall.html" class="nav-link">Add New Hall</a>
                       </li>
                       <li class="nav-item">
-                        <a href="../hall_manager/set_hall_status.html" class="nav-link">Set Hall Status</a>
+                        <a href="set_hall_status.html" class="nav-link">Set Hall Status</a>
                       </li>
                       <li class="nav-item">
-                        <a href="../hall_manager/suspend_hall.html" class="nav-link">Temp Suspend a Hall</a>
+                        <a href="suspend_hall.html" class="nav-link">Temp Suspend a Hall</a>
                       </li>
                       <li class="nav-item">
-                        <a href="../hall_manager/Search_for_a_hall.html" class="nav-link">Search For a Hall</a>
+                        <a href="Search_for_a_hall.html" class="nav-link">Search For a Hall</a>
                       </li>
                       <li class="nav-item">
-                        <a href="../hall_manager/view_all_halls.html" class="nav-link">View All Halls</a>
+                        <a href="view_all_halls.html" class="nav-link">View All Halls</a>
                       </li>
                     </ul>
                   </div>
@@ -108,13 +108,13 @@
                   <div class="collapse" id="eqip_manager">
                     <ul class="nav sub-menu">
                       <li class="nav-item">
-                        <a href="add_new_equip.html" class="nav-link">Add New Equipments</a>
+                        <a href="pages/equip_manager/add_new_equip.html" class="nav-link">Add New Equipments</a>
                       </li>   
                       <li class="nav-item">
-                        <a href="equip_request.html" class="nav-link">Equip Requests</a>
+                        <a href="pages/equip_manager/equip_request.html" class="nav-link">Equip Requests</a>
                       </li>  
                       <li class="nav-item">
-                        <a href="status_equip.html" class="nav-link">Status of Inquiries</a>
+                        <a href="pages/equip_manager/status_equip.html" class="nav-link">Status of Inquiries</a>
                       </li>  
                     </ul>
                   </div>
@@ -188,104 +188,44 @@
           </nav>
     </div>
 
-    <div class="page-content">
-      <br>
-      <nav class="page-breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Equipment Manager</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Add New Equipment</li>
-        </ol>
-      </nav>
-
-      <div class="row">
-        <div class="col-md-12 stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <h6 class="card-title">Add New Equipment</h6>
-                <form>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label class="control-label">Equipment ID</label>
-                        <input type="text" class="form-control" placeholder="Enter ID" name="equip_id">
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label class="control-label">Brand</label>
-                        <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
-                      </div>
-
-                    </div><!-- Col -->
-					
-					<div class="col-sm-4">
-						<div class="form-group">
-						  <label class="control-label">Brand</label>
-						  <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
-						</div>
-					  </div><!-- Col -->
-
-                  </div><!-- Row -->
-
-
-				  
-				  <div class="row">
-					<div class="col-sm-4">
-						<div class="form-group">
-						  <label class="control-label">Equipment Type</label>
-						  <input type="text" class="form-control" placeholder="Select Type" name="equip_type">
-						</div>
-					  </div><!-- Col -->
-				  
-
-				  <div class="col-sm-4">
-					<div class="form-group">
-					  <label class="control-label">Equipment Status</label>
-					 	 <select class="form-control">
-							<option>  </option>
-
-							<option> Working </option>
-							<option> Defected </option>
-							<option> Refurbished </option>
-							<option> Have to Repair </option>
-							
-						</select>
-					</div>
-				  </div><!-- Col -->
-
-				  <div class="col-sm-4">
-					<div class="form-group">
-					  <label class="control-label">Supplier</label>
-					  <input type="text" class="form-control" placeholder="Enter Supplier " name="equip_supplier">
-					</div>
-				  </div><!-- Col -->
-
-				</div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">View All Halls</h6>
+            
+            <div class="table-responsive">
+              <table id="view_halls" class="table">
+                <thead>
+                  <tr>
+                    <th >Hall ID</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Capasity</th>
+                    
+                   
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                     <td>Free</td>
+                    <td><button class="btn btn-warning">View</button></td>
+                    <td></td>
+                  </tr>
                   
-
-                  <br>
-
                   
-
-                <div class="row">
-                  
-              
-                <div class="row">
-                  <div class="cols-sm-3">
-                    <button type="button" class="btn btn-success" id="add_new_hall">Add New</button>
-                  </div>
-                  <div class="cols-sm-3">
-                      <button type="button" class="btn btn-danger" id="resest">Reset</button>
-                  </div>
-                </div> 
-                
+                </tbody>
+              </table>
             </div>
-          </form>
           </div>
         </div>
       </div>
-
-  </div>
     </div>
 </div>
 

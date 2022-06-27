@@ -82,7 +82,7 @@
                   <div class="collapse" id="res_manager">
                     <ul class="nav sub-menu">
                       <li class="nav-item">
-                        <a href="pages/reservation_manager/reserve.html" class="nav-link">Reserve a Hall</a>
+                        <a href="reserve_hall.html" class="nav-link">Reserve a Hall</a>
                       </li>   
                       <li class="nav-item">
                         <a href="pages/reservation_manager/reserve.html" class="nav-link">Location of a Hall</a>
@@ -193,7 +193,7 @@
       <nav class="page-breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Hall Manager</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Add New Hall</li>
+          <li class="breadcrumb-item active" aria-current="page">Reserve Hall</li>
         </ol>
       </nav>
 
@@ -201,112 +201,94 @@
         <div class="col-md-12 stretch-card">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title">Add New Hall</h6>
+              <h6 class="card-title">Reserve Hall</h6>
                 <form>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label class="control-label">Hall Name</label>
-                        <input type="text" class="form-control" placeholder="Enter Hall name" name="hall_name">
+                        <label class="control-label">Lecture</label>
+                        <input type="text" class="form-control" placeholder="Enter Lecture" name="lec_name">
                       </div>
                     </div><!-- Col -->
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label class="control-label">Hall ID</label>
-                        <input type="text" class="form-control" placeholder="Enter ID" name="hall_id">
+                        <label class="control-label">Lecture ID</label>
+                        <input type="text" class="form-control" placeholder="Enter Lecture ID" name="lec_id">
                       </div>
                     </div><!-- Col -->
                   </div><!-- Row -->
                   <br>
+                 
                   <div class="row">
                     <div class="col-sm-6">
-                      Location
-                    </div>
-                    <br>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-4">
                       <div class="form-group">
-                        <label class="control-label">Block </label>
-                        <input type="text" class="form-control" placeholder="Enter Block" name="hall_block">
+                        <label class="control-label">Lecturer </label>
+                        <input type="text" class="form-control" placeholder="Enter Lecturer" name="lecturer_name">
                       </div>
                     </div><!-- Col -->
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label class="control-label">Building</label>
-                        <input type="text" class="form-control" placeholder="Enter Building" name="hall_building">
+                        <label class="control-label">Students</label>
+                        <input type="text" class="form-control" placeholder="Enter Students" name="Student">
                       </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label class="control-label">Floor</label>
-                        <input type="text" class="form-control" placeholder="Enter Floor" name="hall_floor">
-                      </div>
-                    </div><!-- Col -->
+                    </div><!-- Col -->                    
                   </div><!-- Row -->
-
-                  <br>
                   <div class="row">
                     <div class="col-sm-6">
-                      Physical Details
-                    </div>
-                    <br>
-                  </div>
-
-
-                  <div class="row">
-                    <div class="col-sm-3">
                       <div class="form-group">
-                        <label for="cap"> Capacity</label>
-                        <select class="form-control" id="cap" name="cap" aria-placeholder="Capacity">
-                          <option></option> 
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                        <option value="200">200</option>
-                        <option value="250">250</option>
-                        <option value="300">300</option>
-                        <option value="other">Greater Than 300</option>
-                      </select>
+                        <label class="control-label">Lecture Date</label>
+                        <input type="date" name="date">
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                    </div><!-- Col -->
+                    <div class="col-sm-4">
                       <div class="form-group">
-                        <label for="door"> Doors </label>
-                        <select class="form-control" id="door" name="door"> 
+                        <label class="control-label">Start Time</label>
+                        <input type="time" name="s_time">
+                      </div>
+                    </div><!-- Col -->
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label">For How Long</label>
+                        <select class="form-control">
                           <option></option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>	
+                          <option value="1d">1 Day</option>
+                          <option value="2d">2 Day</option>
+                          <option value="3d">3 Day</option>
+                          <option value="4d">4 Day</option>
+                          <option value="5d">5 Day</option>
+                          <option value="6d">6 Day</option>
+                          <option value="1w">1 Week</option>
+                          <option value="2w">2 Week</option>
+                          <option value="3w">3 Week</option>
+                          <option value="1m">1 Month</option>
+                          <option value="2m">2 Month</option>
+                          <option value="1s">1 Semester</option>
                         </select>
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                    </div><!-- Col -->
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="door"> Type </label>
-                        <select class="form-control" id="type" name="type">
-                          <option></option> 
-                        <option value="100">Lecture</option>
-                        <option value="150">Conference</option>
-                        <option value="200">Lab</option>
-                        <option value="250">Common</option>
-                      </select>
+                        <label class="control-label">Duration</label>
+                        <input type="text" name="duration">
                       </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <label for="door"> AC </label>
-                        <select class="form-control" id="ac" name="ac">
-                          <option></option> 
-                        <option value="1">No</option>
-                        <option value="2">1-10</option>
-                        <option value="3">10-15</option>
-                        <option value="4">15+</option>	
-                      </select>
-                      </div>
-                    </div>
+                    </div><!-- Col -->
                   </div>
-
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        
+                        
+                      </div>
+                    </div><!-- Col -->
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label class="control-label">End Time</label>
+                        <input type="time" name="e_time">
+                      </div>
+                    </div><!-- Col -->
+                  </div>
                   <div class="row">
                     <div class="col-sm-6">
                       Equipment Details
@@ -314,8 +296,9 @@
                     <br>
                   </div>
 
-
-                <div class="row">
+                  <br>
+                
+                <div class="row"> 
                   <div class="col-sm-12">
                     <div class="form-group">
                       Projector : <input type="checkbox" id="projector" name="projector">
@@ -328,11 +311,10 @@
                    
 
                 </div>
-                </div>
-              
-                <div class="row">
+                </div>                        
+                <div class="row">                  
                   <div class="cols-sm-3">
-                    <button type="button" class="btn btn-success" id="add_new_hall">Add New</button>
+                    <button type="button" class="btn btn-success" id="reserve_hall">Reserve</button>
                   </div>
                   <div class="cols-sm-3">
                       <button type="button" class="btn btn-danger" id="resest">Reset</button>

@@ -60,13 +60,13 @@
                         <a href="set_hall_status.html" class="nav-link">Set Hall Status</a>
                       </li>
                       <li class="nav-item">
-                        <a href="pages/hall_manager/suspend_hall.html" class="nav-link">Temp Suspend a Hall</a>
+                        <a href="suspend_hall.html" class="nav-link">Temp Suspend a Hall</a>
                       </li>
                       <li class="nav-item">
-                        <a href="pages/hall_manager/Search_for_a_hall.html" class="nav-link">Search For a Hall</a>
+                        <a href="Search_for_a_hall.html" class="nav-link">Search For a Hall</a>
                       </li>
                       <li class="nav-item">
-                        <a href="pages/hall_manager/view_all_halls.html" class="nav-link">View All Halls</a>
+                        <a href="view_all_halls.html" class="nav-link">View All Halls</a>
                       </li>
                     </ul>
                   </div>
@@ -85,17 +85,17 @@
                         <a href="reserve_hall.html" class="nav-link">Reserve a Hall</a>
                       </li>   
                       <li class="nav-item">
-                        <a href="pages/reservation_manager/reserve.html" class="nav-link">Location of a Hall</a>
+                        <a href="hall_location.html" class="nav-link">Location of a Hall</a>
                       </li>  
                       <li class="nav-item">
-                        <a href="pages/reservation_manager/reserve.html" class="nav-link">Immediate Reservation</a>
+                        <a href="immediate_reservation.html" class="nav-link">Immediate Reservation</a>
                       </li>  
                       <li class="nav-item">
-                        <a href="pages/reservation_manager/reserve.html" class="nav-link">Free Halls</a>
+                        <a href="free_hall.html" class="nav-link">Free Halls</a>
                       </li>  
                       <li class="nav-item">
                         <a href="reservation_requests.html" class="nav-link">Reservation Requests</a>
-                      </li>
+                      </li> 
                     </ul>
                   </div>
                 </li>
@@ -191,146 +191,48 @@
           </nav>
     </div>
 
-    <div class="page-content">
-      <br>
-      <nav class="page-breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Reservation Manager</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Reserve Hall</li>
-        </ol>
-      </nav>
-
-      <div class="row">
-        <div class="col-md-12 stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <h6 class="card-title">Reserve Hall</h6>
-                <form>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Lecture</label>
-                        <input type="text" class="form-control" placeholder="Enter Lecture" name="lec_name">
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Lecture ID</label>
-                        <input type="text" class="form-control" placeholder="Enter Lecture ID" name="lec_id">
-                      </div>
-                    </div><!-- Col -->
-                  </div><!-- Row -->
-                  <br>
-                 
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Lecturer </label>
-                        <input type="text" class="form-control" placeholder="Enter Lecturer" name="lecturer_name">
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Students</label>
-                        <input type="text" class="form-control" placeholder="Enter Students" name="Student">
-                      </div>
-                    </div><!-- Col -->                    
-                  </div><!-- Row -->
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Lecture Date</label>
-                        <input type="date" name="date">
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label class="control-label">Start Time</label>
-                        <input type="time" name="s_time">
-                      </div>
-                    </div><!-- Col -->
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">For How Long</label>
-                        <select class="form-control">
-                          <option></option>
-                          <option value="1d">1 Day</option>
-                          <option value="2d">2 Day</option>
-                          <option value="3d">3 Day</option>
-                          <option value="4d">4 Day</option>
-                          <option value="5d">5 Day</option>
-                          <option value="6d">6 Day</option>
-                          <option value="1w">1 Week</option>
-                          <option value="2w">2 Week</option>
-                          <option value="3w">3 Week</option>
-                          <option value="1m">1 Month</option>
-                          <option value="2m">2 Month</option>
-                          <option value="1s">1 Semester</option>
-                        </select>
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="control-label">Duration</label>
-                        <input type="text" name="duration">
-                      </div>
-                    </div><!-- Col -->
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        
-                        
-                      </div>
-                    </div><!-- Col -->
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label class="control-label">End Time</label>
-                        <input type="time" name="e_time">
-                      </div>
-                    </div><!-- Col -->
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      Equipment Details
-                    </div>
-                    <br>
-                  </div>
-
-                  <br>
-                
-                <div class="row"> 
-                  <div class="col-sm-12">
-                    <div class="form-group">
-                      Projector : <input type="checkbox" id="projector" name="projector">
-                   
-                      Screen : <input type="checkbox" id="screen" name="screen">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">User Manager</h6>
+            
+            <div class="table-responsive">
+              <table id="view_halls" class="table">
+                <thead>
+                  <tr>
+                    <th>Index</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>User Role</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                     
-                      MIC : <input type="checkbox" id="mic" name="Mic">
-
-                      Amp : <input type="checkbox" id="amp" name="AMP">
-                   
-
-                </div>
-                </div>                        
-                <div class="row">                  
-                  <div class="cols-sm-3">
-                    <button type="button" class="btn btn-success" id="reserve_hall">Reserve</button>
-                  </div>
-                  <div class="cols-sm-3">
-                      <button type="button" class="btn btn-danger" id="resest">Reset</button>
-                  </div>
-                </div> 
-                
+       
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>aaa</td>
+                    <td>ssas</td>
+                    <td>asxa</td>
+                    <td>adcs</td>
+                    <td>sdca</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                    <td><button class="btn btn-warning">Disable</button></td>
+                    <td><button class="btn btn-success">Enable</button></td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
             </div>
-          </form>
           </div>
         </div>
       </div>
-
-  </div>
     </div>
 </div>
 

@@ -93,6 +93,9 @@
                       <li class="nav-item">
                         <a href="pages/reservation_manager/reserve.html" class="nav-link">Free Halls</a>
                       </li>  
+                      <li class="nav-item">
+                        <a href="reservation_requests.html" class="nav-link">Reservation Requests</a>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -207,12 +210,8 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label class="control-label">Request By</label>
-                        <select class="form-control">
-                            <option></option>
-                            <option value="lecturer">Lecturer</option>
-                            <option value="student">Student</option>
-                            <option value="staff">Staff</option>
-                        </select>
+                        <input type="text" name="user_name" placeholder="User Name"> <!-- meka auto ganna hadanna-->
+
                       </div>
                     </div><!-- Col -->
                   </div><!-- Row -->
@@ -279,12 +278,52 @@
                     </div>
                   </div>
 
+
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="from_date_res"> From </label>
+                        <input type="date" id="from_date_res" name="from_date_res">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="from_time_res"> From </label> <br>
+                        <input type="time" id="from_time_res" name="from_time_res">
+                      </div>
+                    </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label for="todate_res"> To </label>
+                          <input type="date" id="to_date_res" name="to_date_res">
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label for="to_time_res"> To </label> <br>
+                          <input type="time" id="to_time_res" name="to_time_res">
+                        </div>
+                      </div>
+  
+                      </div>
+
+
+
                   <div class="row">
                     <div class="col-sm-6">
                       Equipment Details
                     </div>
                     <br><br>
                   </div>
+
+                
 
 
                 <div class="row">
@@ -300,6 +339,7 @@
                 </div>
                 </div>
               
+                
                 <div class="row">
                   <div class="cols-sm-3">
                     <button type="button" class="btn btn-success" id="immediate_request">Request</button>

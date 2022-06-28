@@ -378,360 +378,43 @@
 					<i data-feather="menu"></i>
 				</a>
 				<div class="navbar-content">
-					<form class="search-form">
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<div class="input-group-text">
-									<i data-feather="search"></i>
-								</div>
-							</div>
-							<input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
-						</div>
-					</form>
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="font-weight-medium ml-1 mr-1">English</span>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="languageDropdown">
-                <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-us" title="us" id="us"></i> <span class="ml-1"> English </span></a>
-                <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-fr" title="fr" id="fr"></i> <span class="ml-1"> French </span></a>
-                <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-de" title="de" id="de"></i> <span class="ml-1"> German </span></a>
-                <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-pt" title="pt" id="pt"></i> <span class="ml-1"> Portuguese </span></a>
-                <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-es" title="es" id="es"></i> <span class="ml-1"> Spanish </span></a>
-							</div>
+          <ul class="navbar-nav">			
+            <li class="nav-item dropdown nav-profile">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="profile pic.jpg" alt="profile">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                <div class="dropdown-header d-flex flex-column align-items-center">
+                  <div class="figure mb-3">
+                    <img src="profile pic.jpg" alt="">
+                  </div>
+                  <div class="info text-center">
+                    <p class="name font-weight-bold mb-0">Amiah Burton</p>
+                    <p class="email text-muted mb-3">amiahburton@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="dropdown-body">
+                  <ul class="profile-nav p-0 pt-3">
+                    <li class="nav-item">
+                      <a href="../auth/login.html" class="nav-link">
+                        <i data-feather="log-out"></i>
+                        <span>Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                
+              </div>
             </li>
-						<li class="nav-item dropdown nav-apps">
-							<a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i data-feather="grid"></i>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="appsDropdown">
-								<div class="dropdown-header d-flex align-items-center justify-content-between">
-									<p class="mb-0 font-weight-medium">Web Apps</p>
-									<a href="javascript:;" class="text-muted">Edit</a>
-								</div>
-								<div class="dropdown-body">
-									<div class="d-flex align-items-center apps">
-										<a href="../../pages/apps/chat.html"><i data-feather="message-square" class="icon-lg"></i><p>Chat</p></a>
-										<a href="../../pages/apps/calendar.html"><i data-feather="calendar" class="icon-lg"></i><p>Calendar</p></a>
-										<a href="../../pages/email/inbox.html"><i data-feather="mail" class="icon-lg"></i><p>Email</p></a>
-										<a href="../../pages/general/profile.html"><i data-feather="instagram" class="icon-lg"></i><p>Profile</p></a>
-									</div>
-								</div>
-								<div class="dropdown-footer d-flex align-items-center justify-content-center">
-									<a href="javascript:;">View all</a>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item dropdown nav-messages">
-							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i data-feather="mail"></i>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="messageDropdown">
-								<div class="dropdown-header d-flex align-items-center justify-content-between">
-									<p class="mb-0 font-weight-medium">9 New Messages</p>
-									<a href="javascript:;" class="text-muted">Clear all</a>
-								</div>
-								<div class="dropdown-body">
-									<a href="javascript:;" class="dropdown-item">
-										<div class="figure">
-											<img src="https://via.placeholder.com/30x30" alt="userr">
-										</div>
-										<div class="content">
-											<div class="d-flex justify-content-between align-items-center">
-												<p>Leonardo Payne</p>
-												<p class="sub-text text-muted">2 min ago</p>
-											</div>	
-											<p class="sub-text text-muted">Project status</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="figure">
-											<img src="https://via.placeholder.com/30x30" alt="userr">
-										</div>
-										<div class="content">
-											<div class="d-flex justify-content-between align-items-center">
-												<p>Carl Henson</p>
-												<p class="sub-text text-muted">30 min ago</p>
-											</div>	
-											<p class="sub-text text-muted">Client meeting</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="figure">
-											<img src="https://via.placeholder.com/30x30" alt="userr">
-										</div>
-										<div class="content">
-											<div class="d-flex justify-content-between align-items-center">
-												<p>Jensen Combs</p>												
-												<p class="sub-text text-muted">1 hrs ago</p>
-											</div>	
-											<p class="sub-text text-muted">Project updates</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="figure">
-											<img src="https://via.placeholder.com/30x30" alt="userr">
-										</div>
-										<div class="content">
-											<div class="d-flex justify-content-between align-items-center">
-												<p>Amiah Burton</p>
-												<p class="sub-text text-muted">2 hrs ago</p>
-											</div>
-											<p class="sub-text text-muted">Project deadline</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="figure">
-											<img src="https://via.placeholder.com/30x30" alt="userr">
-										</div>
-										<div class="content">
-											<div class="d-flex justify-content-between align-items-center">
-												<p>Yaretzi Mayo</p>
-												<p class="sub-text text-muted">5 hr ago</p>
-											</div>
-											<p class="sub-text text-muted">New record</p>
-										</div>
-									</a>
-								</div>
-								<div class="dropdown-footer d-flex align-items-center justify-content-center">
-									<a href="javascript:;">View all</a>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item dropdown nav-notifications">
-							<a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i data-feather="bell"></i>
-								<div class="indicator">
-									<div class="circle"></div>
-								</div>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="notificationDropdown">
-								<div class="dropdown-header d-flex align-items-center justify-content-between">
-									<p class="mb-0 font-weight-medium">6 New Notifications</p>
-									<a href="javascript:;" class="text-muted">Clear all</a>
-								</div>
-								<div class="dropdown-body">
-									<a href="javascript:;" class="dropdown-item">
-										<div class="icon">
-											<i data-feather="user-plus"></i>
-										</div>
-										<div class="content">
-											<p>New customer registered</p>
-											<p class="sub-text text-muted">2 sec ago</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="icon">
-											<i data-feather="gift"></i>
-										</div>
-										<div class="content">
-											<p>New Order Recieved</p>
-											<p class="sub-text text-muted">30 min ago</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="icon">
-											<i data-feather="alert-circle"></i>
-										</div>
-										<div class="content">
-											<p>Server Limit Reached!</p>
-											<p class="sub-text text-muted">1 hrs ago</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="icon">
-											<i data-feather="layers"></i>
-										</div>
-										<div class="content">
-											<p>Apps are ready for update</p>
-											<p class="sub-text text-muted">5 hrs ago</p>
-										</div>
-									</a>
-									<a href="javascript:;" class="dropdown-item">
-										<div class="icon">
-											<i data-feather="download"></i>
-										</div>
-										<div class="content">
-											<p>Download completed</p>
-											<p class="sub-text text-muted">6 hrs ago</p>
-										</div>
-									</a>
-								</div>
-								<div class="dropdown-footer d-flex align-items-center justify-content-center">
-									<a href="javascript:;">View all</a>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item dropdown nav-profile">
-							<a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img src="https://via.placeholder.com/30x30" alt="profile">
-							</a>
-							<div class="dropdown-menu" aria-labelledby="profileDropdown">
-								<div class="dropdown-header d-flex flex-column align-items-center">
-									<div class="figure mb-3">
-										<img src="https://via.placeholder.com/80x80" alt="">
-									</div>
-									<div class="info text-center">
-										<p class="name font-weight-bold mb-0">Amiah Burton</p>
-										<p class="email text-muted mb-3">amiahburton@gmail.com</p>
-									</div>
-								</div>
-								<div class="dropdown-body">
-									<ul class="profile-nav p-0 pt-3">
-										<li class="nav-item">
-											<a href="../../pages/general/profile.html" class="nav-link">
-												<i data-feather="user"></i>
-												<span>Profile</span>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="edit"></i>
-												<span>Edit Profile</span>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="repeat"></i>
-												<span>Switch User</span>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="log-out"></i>
-												<span>Log Out</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+          </ul>
+        </div> <!-- end profile-->
 			</nav>
 			<!-- partial -->
 
-			<div class="page-content">
-        
-        <div class="row inbox-wrapper">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-3 email-aside border-lg-right">
-                    <div class="aside-content">
-                      <div class="aside-header">
-                        <button class="navbar-toggle" data-target=".aside-nav" data-toggle="collapse" type="button">
-                          <span class="icon"><i data-feather="chevron-down"></i></span>
-                        </button>
-                        <span class="title text-muted font-weight-bold">Mail Service</span>
-                        <p class="text-muted">amiahburton@gmail.com</p>
-                      </div>
-                      <div class="aside-compose"><a class="btn btn-primary btn-block" href="../../../demo_1/pages/email/compose.html">Compose Email</a></div>
-                      <div class="aside-nav collapse">
-                        <ul class="nav">
-                          <li><a href="../../../demo_1/pages/email/inbox.html"><span class="icon"><i data-feather="inbox"></i></span>Inbox<span class="badge badge-danger-muted text-white font-weight-bold float-right">2</span></a></li>
-                          <li class="active"><a href="#"><span class="icon"><i data-feather="mail"></i></span>Sent Mail</a></li>
-                          <li><a href="#"><span class="icon"><i data-feather="briefcase"></i></span>Important<span class="badge badge-info-muted text-white font-weight-bold float-right">4</span></a></li>
-                          <li><a href="#"><span class="icon"><i data-feather="file"></i></span>Drafts</a></li>
-                          <li><a href="#"><span class="icon"><i data-feather="star"></i></span>Tags</a></li>
-                          <li><a href="#"><span class="icon"><i data-feather="trash"></i></span>Trash</a></li>
-                        </ul>
-                        <span class="title">Labels</span>
-                        <ul class="nav nav-pills nav-stacked">
-                          <li>
-                            <a href="#"><i data-feather="tag" class="text-warning"></i> Important </a>
-                          </li>
-                          <li><a href="#">
-                            <i data-feather="tag" class="text-primary"></i> Business </a>
-                          </li>
-                          <li>
-                            <a href="#"> <i data-feather="tag" class="text-info"></i> Inspiration </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-9 email-content">
-                    <div class="email-head">
-                      <div class="email-head-title d-flex align-items-center">
-                        <span data-feather="edit" class="icon-md mr-2"></span>
-                        New message
-                      </div>
-                    </div>
-                    <div class="email-compose-fields">
-                      <div class="to">
-                        <div class="form-group row py-0">
-                          <label class="col-md-1 control-label">To:</label>
-                          <div class="col-md-11">
-                              <div class="form-group">
-                                <select class="compose-multiple-select form-control w-100" multiple="multiple">
-                                  <option value="AL">Alabama</option>
-                                  <option value="WY">Wyoming</option>
-                                  <option value="AM">America</option>
-                                  <option value="CA">Canada</option>
-                                  <option value="RU">Russia</option>
-                                </select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="to cc">
-                        <div class="form-group row pt-1 pb-3">
-                          <label class="col-md-1 control-label">Cc</label>
-                          <div class="col-md-11">
-                            <select class="compose-multiple-select form-control w-100" multiple="multiple">
-                              <option value="Alabama">Alabama</option>
-                              <option value="Alaska" selected="selected">Alaska</option>
-                              <option value="Melbourne">Melbourne</option>
-                              <option value="Victoria" selected="selected">Victoria</option>
-                              <option value="Newyork">Newyork</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="subject">
-                        <div class="form-group row py-0">
-                          <label class="col-md-1 control-label">Subject</label>
-                          <div class="col-md-11">
-                            <input class="form-control" type="text">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="email editor">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="control-label sr-only" for="simpleMdeEditor">Descriptions </label>
-								          <textarea class="form-control" name="tinymce" id="simpleMdeEditor" rows="5"></textarea>
-                        </div>
-                      </div>
-                      <div class="email action-send">
-                        <div class="col-md-12">
-                          <div class="form-group mb-0">
-                            <button class="btn btn-primary btn-space" type="submit"><i class="icon s7-mail"></i> Send</button>
-                            <button class="btn btn-secondary btn-space" type="button"><i class="icon s7-close"></i> Cancel</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+			
 
-			</div>
-
-			<!-- partial:../../partials/_footer.html -->
-			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
-				<p class="text-muted text-center text-md-left">Copyright © 2020 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>. All rights reserved</p>
-				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
-			</footer>
-			<!-- partial -->
-	
 		</div>
 	</div>
 

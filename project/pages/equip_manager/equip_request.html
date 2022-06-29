@@ -201,7 +201,7 @@
       <nav class="page-breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Equipment Manager</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Add New Equipment</li>
+          <li class="breadcrumb-item active" aria-current="page">Equipment Requests</li>
         </ol>
       </nav>
 
@@ -209,27 +209,20 @@
         <div class="col-md-12 stretch-card">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title">Add New Equipment</h6>
+              <h6 class="card-title">Equipment Request</h6>
               <form>
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-6">
                     <div class="form-group">
-                      <label class="control-label">Equipment ID</label>
-                      <input type="text" class="form-control" placeholder="Enter ID" name="equip_id">
+                      <label class="control-label">Hall ID</label>
+                      <input type="text" class="form-control" placeholder="Enter hall ID.." name="hall_id">
                     </div>
                   </div><!-- Col -->
-                  <div class="col-sm-4">
+                  
+                  <div class="col-sm-6">
                     <div class="form-group">
-                      <label class="control-label">Brand</label>
-                      <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
-                    </div>
-
-                  </div><!-- Col -->
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Brand</label>
-                      <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
+                      <label class="control-label">Lecture ID / Student ID</label>
+                      <input type="text" class="form-control" placeholder="Enter your ID.." name="lec_stu_id">
                     </div>
                   </div><!-- Col -->
 
@@ -238,37 +231,36 @@
 
 
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-6">
                     <div class="form-group">
                       <label class="control-label">Equipment Type</label>
-                      <input type="text" class="form-control" placeholder="Select Type" name="equip_type">
-                    </div>
-                  </div><!-- Col -->
-
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Equipment Status</label>
-                      <select class="form-control">
-                        <option> </option>
-
-                        <option> Working </option>
-                        <option> Defected </option>
-                        <option> Refurbished </option>
-                        <option> Have to Repair </option>
-
+                      <select class="form-select">
+                        <option></option>
+                        <option value="projector">Projector</option>
+                        <option value="screen">Screen</option>
+                        <option value="mic">Mic</option>
+                        <option value="amp">Amp</option>
                       </select>
                     </div>
                   </div><!-- Col -->
 
-                  <div class="col-sm-4">
+
+                  <div class="col-sm-6">
                     <div class="form-group">
-                      <label class="control-label">Supplier</label>
-                      <input type="text" class="form-control" placeholder="Enter Supplier " name="equip_supplier">
+                      <label class="control-label">Number of Equipments</label>
+                      <input type="text" class="form-control" placeholder="Enter No of Equip.." name="no_equip">
                     </div>
-                  </div><!-- Col -->
+                  </div><!-- Col -->                  
 
                 </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="control-label">Comments</label>
+                        <textarea name="comment" rows="4" cols="50" placeholder="Write something.."></textarea>
+                      </div>
+                    </div><!-- Col -->
+                </div><!--row-->
 
 
                 <br>
@@ -279,7 +271,7 @@
 
                   <div class="row">
                     <div class="cols-sm-3 ml-3">
-                      <button type="button" class="btn btn-success" id="add_new_hall">Add New</button>
+                      <button type="button" class="btn btn-success" id="request">Request</button>
                     </div>
                     <div class="cols-sm-3 ml-3">
                       <button type="button" class="btn btn-danger" id="resest">Reset</button>

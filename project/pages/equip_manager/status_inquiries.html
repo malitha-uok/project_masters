@@ -201,7 +201,7 @@
       <nav class="page-breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Equipment Manager</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Add New Equipment</li>
+          <li class="breadcrumb-item active" aria-current="page">Status of Inquiries</li>
         </ol>
       </nav>
 
@@ -209,85 +209,38 @@
         <div class="col-md-12 stretch-card">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title">Add New Equipment</h6>
-              <form>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Equipment ID</label>
-                      <input type="text" class="form-control" placeholder="Enter ID" name="equip_id">
-                    </div>
-                  </div><!-- Col -->
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Brand</label>
-                      <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
-                    </div>
-
-                  </div><!-- Col -->
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Brand</label>
-                      <input type="text" class="form-control" placeholder="Enter Brand" name="equip_brand">
-                    </div>
-                  </div><!-- Col -->
-
-                </div><!-- Row -->
-
-
-
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Equipment Type</label>
-                      <input type="text" class="form-control" placeholder="Select Type" name="equip_type">
-                    </div>
-                  </div><!-- Col -->
-
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Equipment Status</label>
-                      <select class="form-control">
-                        <option> </option>
-
-                        <option> Working </option>
-                        <option> Defected </option>
-                        <option> Refurbished </option>
-                        <option> Have to Repair </option>
-
-                      </select>
-                    </div>
-                  </div><!-- Col -->
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label class="control-label">Supplier</label>
-                      <input type="text" class="form-control" placeholder="Enter Supplier " name="equip_supplier">
-                    </div>
-                  </div><!-- Col -->
-
-                </div>
-
-
-                <br>
-
-
-
-                
-
-                  <div class="row">
-                    <div class="cols-sm-3 ml-3">
-                      <button type="button" class="btn btn-success" id="add_new_hall">Add New</button>
-                    </div>
-                    <div class="cols-sm-3 ml-3">
-                      <button type="button" class="btn btn-danger" id="resest">Reset</button>
-                    </div>
-                  </div>
-
-               
-              </form>
+              <h6 class="card-title">Status of Inquiries</h6>
+              <div class="table-responsive">
+                <table id="status_inquiries" class="table">
+                  <thead>
+                    <tr>
+                      <th >Hall ID</th>
+                      <th>Lecturer/student ID</th>
+                      <th>Equipment</th>
+                      <th>No of Equipment</th>
+                      <th>Date Request</th>
+                      
+                     
+                      
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>SPB1</td>
+                      <td>PE/2016/002</td>
+                      <td>mic</td>
+                      <td>2</td>
+                       <td>2 oct 2019</td>
+                      <td><button class="btn btn-success">Done</button></td>
+                      <td><button class="btn btn-danger">Reject</button></td>
+                      <td></td>
+                    </tr>
+                    
+                    
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
